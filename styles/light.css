@@ -33,11 +33,3 @@
   --hover-color:#32312D66;
   
 }
-
-.page.theme_light .rec::before {
-  visibility: hidden;
-}
-
-.page.theme_light .rec::after {
-  visibility: hidden;
-}

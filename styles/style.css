@@ -5,6 +5,7 @@
   color: var(--accent-color, #f1b2ce);
   font-family: var(--main-font, sans-serif);
   background-image: var(--background-image);
+  background-color: var(--bg-color);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -29,13 +30,6 @@
     margin-bottom: 60px;
     margin-top: 60px;
   }
-}
-
-.theme-light.page {
-  background-image: url(../images/cover-image-light.png);
-}
-.theme-dark.page {
-  background-image: url(../images/cover-image-dark.png);
 }
 
 .angle::before {
@@ -143,13 +137,12 @@
 
 .heading {
   font-weight: 700;
-  line-height: 129.53px;
   text-align: start;
   color: var(--title-color);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 95.7px;
-  margin-left: 10px;
 }
+
 @media (width >=768px) {
   .heading {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
