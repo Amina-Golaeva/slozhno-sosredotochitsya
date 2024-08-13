@@ -1,39 +1,19 @@
-:root.theme-dark {
-  --main-font:IBM Plex Mono;
-  --bg-color:#000028;
-  --text-color:#F1B2CE;
-  --accent-color:#FF0070;
-  --title-color: #DB00FF;
-  --background-image: url(../images/cover-image-dark.png);
-  --hover-color:#FF007066;
-  --accent-bg-color:#FF0070;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --main-font:IBM Plex Mono;
-  --bg-color:#000028;
-  --text-color:#F1B2CE;
-  --accent-color:#FF0070;
-  --title-color: #DB00FF;
-  --background-image: url(../images/cover-image-dark.png);
-  --hover-color:#FF007066;
-  --accent-bg-color:#FF0070;
-}
-  }
 
 .page.theme_dark {
-  --main-font:IBM Plex Mono;
+  --main-font:'IBM Plex Mono', monospace;
   --bg-color:#000028;
   --text-color:#F1B2CE;
+  --text-title-color: #000028;
   --accent-color:#FF0070;
   --title-color: #DB00FF;
   --background-image: url(../images/cover-image-dark.png);
   --hover-color:#FF007066;
   --accent-bg-color:#FF0070;
+  --accent-link-color: #FF0070;
 }
 
-.page.theme_dark .rec::before {
+.rec::before {
   content: "REC";
   color: #ff0070;
   position: absolute;
@@ -41,7 +21,7 @@
   inset-block-start: 20px;
 }
 
-.page.theme_dark .rec::after {
+.rec::after {
   content: "";
   position: absolute;
   inset-inline-end: 29px;
@@ -50,30 +30,22 @@
   height: 9px;
   background-color: #ff0070;
   box-shadow: 0px 0px 4px 2px #ff0070;
-  border-radius: 5px;
+  border-radius: 50%;
 }
-
 
 @media (width <768px) {
   .rec::before {
-    content: "REC";
-    color: #ff0070;
-    position: absolute;
-    right: 38px;
-    top: 10px;
+    inset-inline-end: 38px;
+    inset-block-start: 10px;
   }
-  
 }
+
 @media (width <768px) {
   .rec::after {
-    content: "";
-    position: absolute;
-    right: 19px;
-    top: 18px;
-    width: 9px;
-    height: 9px;
-    background-color: #ff0070;
-    box-shadow: 0px 0px 4px 2px #ff0070;
-    border-radius: 5px;
+    inset-inline-end: 19px;
+    inset-block-start: 18px;
   }
+}
+.page.theme_dark .rec{
+  visibility:visible;
 }
