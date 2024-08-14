@@ -180,16 +180,11 @@
 @media (width <768px) {
   .header-descraption {
     grid-column-start: 1;
-    grid-column-end: 3;
-    margin:0 1.5vh 1.5vh 1.5vh;
+    margin: 0 1.5vh 1.5vh 1.5vh;
   }
 }
 @media (768px <= width <1024px) {
   .header-descraption {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
     margin-bottom: 2vh;
     margin-right: 2vh;
   }
@@ -200,7 +195,7 @@
   flex-direction: column;
   gap: 20px;
 }
-@media (768px<= width<=1440px) {
+@media (min-width: 768px) {
   .concentration {
     flex-direction: row;
   }
@@ -210,18 +205,17 @@
   font-size: 18px;
   display: flex;
   gap: 20px;
+  line-height: 23.4px;
 }
 
 @media (768px <= width <1024px) {
   .title-concentration {
-    flex-basis: 236px;
-    min-height: 47px;
+    width: 236px;
   }
 }
-@media (width =1024px) {
+@media (width >=1024px) {
   .title-concentration {
-    flex-basis: 314.96px;
-    min-height: 47px;
+    width: 314.96px;
   }
 }
 .concentration-list {
@@ -234,13 +228,12 @@
 
 @media (768px <= width <1024px) {
   .concentration-list {
-    flex-basis: 472px;
+    width: 472px;
   }
 }
-
-@media (width >=1024px) {
+@media (min-width: 1024px) {
   .concentration-list {
-    flex-basis: 648.92px;
+    width: 649px;
   }
 }
 
@@ -291,24 +284,11 @@
 @media (min-width: 769px) {
   .decrease_concentration_list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(315px, 100%), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
     gap: 20px;
     grid-row-start: 2;
     grid-row-end: 3;
   }
-}
-
-.multitasking {
-  grid-column-start: 1;
-  grid-column-end: 2;
-}
-.food {
-  grid-column-start: 2;
-  grid-column-end: 3;
-}
-.gadgets {
-  grid-column-start: 3;
-  grid-column-end: 4;
 }
 
 @media (width >= 1024px) {
@@ -335,17 +315,11 @@
 @media (width >=1024px) {
   .title-concentrate_better {
     flex-basis: 315px;
-    display: flex;
-    gap: 20px;
-    font-size: inherit;
   }
 }
 @media (768px <= width <1024px) {
   .title-concentrate_better {
     flex-basis: 236px;
-    display: flex;
-    gap: 20px;
-    font-size: inherit;
   }
 }
 .advice-container {
